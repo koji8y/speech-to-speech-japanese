@@ -5,6 +5,17 @@
 
 # Speech To Speech: an effort for an open-sourced and modular GPT4-o
 
+fork from: [https://github.com/eustlb/speech-to-speech](https://github.com/eustlb/speech-to-speech)
+
+# Japanese support
+
+```bash
+git clone https://github.com/eustlb/speech-to-speech.git
+cd speech-to-speech
+pip install -r requirements.txt
+python s2s_pipeline.py --mode local --device mps
+```
+MacBookPro M2 Max(32GB)で動作確認済
 
 ## 📖 Quick Index
 * [Approach](#approach)
