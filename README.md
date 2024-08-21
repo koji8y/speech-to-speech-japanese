@@ -18,10 +18,10 @@ pip install ReazonSpeech/pkg/nemo-asr
 git clone https://github.com/myshell-ai/MeloTTS
 cd MeloTSTS
 pip install -e .
+python -m unidic download
 cd ..
 pip install -r requirements.txt
 pip install git+https://github.com/huggingface/transformers.git # 4.45.0.dev0
-python -m unidic download
 python s2s_pipeline.py --mode local --device mps
 ```
 MacBookPro M2 Max(32GB)で動作確認済
