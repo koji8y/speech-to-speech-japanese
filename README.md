@@ -16,7 +16,7 @@ pip install git+https://github.com/nltk/nltk.git@3.8.2
 git clone https://github.com/reazon-research/ReazonSpeech
 pip install ReazonSpeech/pkg/nemo-asr
 git clone https://github.com/myshell-ai/MeloTTS
-cd MeloTSTS
+cd MeloTTS
 pip install -e .
 python -m unidic download
 cd ..
