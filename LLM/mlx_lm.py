@@ -18,7 +18,7 @@ class MLXLanguageModelHandler(BaseHandler):
 
     def setup(
         self,
-        model_name='microsoft/Phi-3-mini-4k-instruct', # "stabilityai/japanese-stablelm-3b-4e1t-instruct",
+        model_name,
         device="mps",
         torch_dtype="float16",
         gen_kwargs={},
@@ -29,7 +29,9 @@ class MLXLanguageModelHandler(BaseHandler):
         init_chat_prompt="あなたは日本語に堪能な友人です。英語を使ってはいけません。全て日本語で回答します. You must answer in Japanese",
     ):
         #model_name="mlx-community/Mistral-7B-Instruct-v0.3-4bit"
-        model_name="mlx-community/Phi-3-medium-4k-instruct-8bit"
+        #model_name="mlx-community/mlx-community/Phi-3-mini-4k-instruct-4bit"
+        #model_name="mlx-community/Llama-3-Swallow-8B-Instruct-v0.1-4bit"
+        #model_name="mlx-community/Llama-3-Swallow-8B-Instruct-v0.1-8bit"
         model_name="mlx-community/Llama-3-Swallow-8B-Instruct-v0.1-8bit"
         print(model_name)
         self.model_name = model_name
