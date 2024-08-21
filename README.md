@@ -21,7 +21,8 @@ pip install -e .
 python -m unidic download
 cd ..
 pip install -r requirements.txt
-pip install git+https://github.com/huggingface/transformers.git 
+pip install git+https://github.com/huggingface/transformers.git
+pip mlx-lm
 python s2s_pipeline.py --mode local --device mps
 ```
 MacBookPro M2 Max(32GB)で動作確認済
