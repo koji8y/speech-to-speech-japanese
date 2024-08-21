@@ -14,7 +14,6 @@ git clone https://github.com/eustlb/speech-to-speech.git
 cd speech-to-speech
 git clone https://github.com/reazon-research/ReazonSpeech
 pip install ReazonSpeech/pkg/nemo-asr
-cd ..
 pip install -r requirements.txt
 python s2s_pipeline.py --mode local --device mps
 ```
