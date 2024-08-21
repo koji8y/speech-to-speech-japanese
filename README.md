@@ -10,7 +10,7 @@ fork from: [https://github.com/eustlb/speech-to-speech](https://github.com/eustl
 # Japanese support
 
 ```bash
-git clone https://github.com/eustlb/speech-to-speech.git
+git clone https://github.com/shi3z/speech-to-speech-japanese.git
 cd speech-to-speech-japanese
 pip install git+https://github.com/nltk/nltk.git@3.8.2
 git clone https://github.com/reazon-research/ReazonSpeech
