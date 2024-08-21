@@ -12,9 +12,16 @@ fork from: [https://github.com/eustlb/speech-to-speech](https://github.com/eustl
 ```bash
 git clone https://github.com/eustlb/speech-to-speech.git
 cd speech-to-speech
+pip install git+https://github.com/nltk/nltk.git@3.8.2
 git clone https://github.com/reazon-research/ReazonSpeech
 pip install ReazonSpeech/pkg/nemo-asr
+git clone https://github.com/myshell-ai/MeloTTS
+cd MeloTSTS
+pip install -e .
+cd ..
 pip install -r requirements.txt
+pip install git+https://github.com/huggingface/transformers.git # 4.45.0.dev0
+python -m unidic download
 python s2s_pipeline.py --mode local --device mps
 ```
 MacBookPro M2 Max(32GB)で動作確認済
