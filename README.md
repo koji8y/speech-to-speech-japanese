@@ -11,7 +11,7 @@ fork from: [https://github.com/eustlb/speech-to-speech](https://github.com/eustl
 
 ```bash
 git clone https://github.com/eustlb/speech-to-speech.git
-cd speech-to-speech
+cd speech-to-speech-japanese
 pip install git+https://github.com/nltk/nltk.git@3.8.2
 git clone https://github.com/reazon-research/ReazonSpeech
 pip install ReazonSpeech/pkg/nemo-asr
@@ -21,7 +21,7 @@ pip install -e .
 python -m unidic download
 cd ..
 pip install -r requirements.txt
-pip install git+https://github.com/huggingface/transformers.git # 4.45.0.dev0
+pip install git+https://github.com/huggingface/transformers.git 
 python s2s_pipeline.py --mode local --device mps
 ```
 MacBookPro M2 Max(32GB)で動作確認済
