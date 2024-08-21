@@ -29,7 +29,7 @@ pip install protobuf --upgrade
 python s2s_pipeline.py --mode local --device mps
 ```
 MacBookPro M2 Max(32GB)で動作確認済
-MacBook M1(16GB)でも動作確認済み( @necobit )
+MacBook M1(16GB)でも動作確認済み( @necobit (https://github.com/necobit) )
 
 ## 📖 Quick Index
 * [Approach](#approach)
