@@ -15,6 +15,7 @@ cd speech-to-speech-japanese
 pip install git+https://github.com/nltk/nltk.git@3.8.2
 git clone https://github.com/reazon-research/ReazonSpeech
 pip install Cython
+# 注意:ReasonSpeechディレクトリの中でこれ↓を実行しないとうまくいきません
 pip install ReazonSpeech/pkg/nemo-asr
 git clone https://github.com/myshell-ai/MeloTTS
 cd MeloTTS
