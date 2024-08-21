@@ -23,7 +23,7 @@ pip install -e .
 python -m unidic download
 cd ..
 pip install -r requirements.txt
-pip install git+https://github.com/huggingface/transformers.git
+pip install transformers==4.44.1
 pip install mlx-lm
 pip install protobuf --upgrade
 python s2s_pipeline.py --mode local --device mps
