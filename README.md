@@ -14,6 +14,7 @@ git clone https://github.com/eustlb/speech-to-speech.git
 cd speech-to-speech-japanese
 pip install git+https://github.com/nltk/nltk.git@3.8.2
 git clone https://github.com/reazon-research/ReazonSpeech
+pip install Cython
 pip install ReazonSpeech/pkg/nemo-asr
 git clone https://github.com/myshell-ai/MeloTTS
 cd MeloTTS
@@ -22,7 +23,8 @@ python -m unidic download
 cd ..
 pip install -r requirements.txt
 pip install git+https://github.com/huggingface/transformers.git
-pip mlx-lm
+pip install mlx-lm
+pip install protobuf --upgrade
 python s2s_pipeline.py --mode local --device mps
 ```
 MacBookPro M2 Max(32GB)で動作確認済
