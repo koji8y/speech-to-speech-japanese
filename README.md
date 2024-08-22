@@ -9,6 +9,8 @@ fork from: [https://github.com/eustlb/speech-to-speech](https://github.com/eustl
 
 # Japanese support
 
+Python 3.10で動作確認済み
+
 ```bash
 git clone https://github.com/shi3z/speech-to-speech-japanese.git
 cd speech-to-speech-japanese
