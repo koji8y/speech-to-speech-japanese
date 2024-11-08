@@ -1,4 +1,6 @@
-nltk==3.8.1
+#nltk @ git+https://github.com/nltk/nltk.git@3.8.2
 parler_tts @ git+https://github.com/huggingface/parler-tts.git
 torch==2.4.0
 sounddevice==0.5.0
+mlx-lm
+lightning_whisper_mlx
