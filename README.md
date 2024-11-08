@@ -9,23 +9,26 @@ fork from: [https://github.com/eustlb/speech-to-speech](https://github.com/eustl
 
 # Japanese support
 
-Python 3.10で動作確認済み
+Python 3.10, 3.11 で動作確認済み (3.12 では `pip install ReazonSpeech/pkg/nemo-asr` が失敗する)
 
 ```bash
 git clone https://github.com/shi3z/speech-to-speech-japanese.git
 cd speech-to-speech-japanese
+pip install -U pip setuptools wheel
+# pip install -r requirements.txt
 pip install git+https://github.com/nltk/nltk.git@3.8.2
 git clone https://github.com/reazon-research/ReazonSpeech
 pip install Cython
 pip install ReazonSpeech/pkg/nemo-asr
 git clone https://github.com/myshell-ai/MeloTTS
+sed -i -e 's/transformers==/transformers>=/' MeloTTS/requirements.txt
 cd MeloTTS
 pip install -e .
 python -m unidic download
 cd ..
 pip install -r requirements.txt
-pip install transformers==4.44.1
-pip install mlx-lm
+# pip install transformers==4.44.1
+# pip install mlx-lm
 pip install protobuf --upgrade
 python s2s_pipeline.py --mode local --device mps
 ```
